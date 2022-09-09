@@ -1,21 +1,21 @@
 #include "Truck.h"
 
-Truck() {
+Truck::Truck() {
 
 }
 
-Truck(int b_code, std::string b_name) {
+Truck(int b_code, string b_name) {
 
 }
 
-string get_brand_name() {
-
+string Truck::get_brand_name() {
+    return brand_name;
 }
 
-int get_brand_code() {
-
+int Truck::get_brand_code() {
+    return brand_code;
 }
 
-~Truck() {
+Truck::~Truck() {
 
 }

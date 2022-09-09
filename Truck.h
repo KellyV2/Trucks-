@@ -1,4 +1,6 @@
 #include <string>
+#ifndef TRUCK_H_
+#define TRUCK_H_
 
 using namespace std;
 
@@ -13,3 +15,5 @@ public:
     int get_brand_code();
     ~Truck();
 };
+
+#endif

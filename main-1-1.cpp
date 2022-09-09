@@ -1,6 +1,8 @@
 #include "Truck.h"
 #include <iostream>
 
+using namespace std;
+
 int main() {
     Truck truck_1(100, "yes");
 

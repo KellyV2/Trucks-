@@ -1,11 +1,13 @@
 #include "Truck.h"
 
 Truck::Truck() {
-
+    brand_code = 0;
+    brand_name = "";
 }
 
 Truck(int b_code, string b_name) {
-
+    brand_code = b_code;
+    brand_name = b_name;
 }
 
 string Truck::get_brand_name() {

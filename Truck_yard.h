@@ -1,3 +1,5 @@
+#ifndef TRUCK_YARD_H_
+#define TRUCK_YARD_H_
 #include "Truck.h"
 
 class Truck_yard {
@@ -12,3 +14,5 @@ private:
     bool add_stock(Truck c);
     ~Truck_yard();
 };
+
+#endif

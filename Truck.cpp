@@ -5,7 +5,7 @@ Truck::Truck() {
     brand_name = "";
 }
 
-Truck(int b_code, string b_name) {
+Truck::Truck(int b_code, string b_name) {
     brand_code = b_code;
     brand_name = b_name;
 }

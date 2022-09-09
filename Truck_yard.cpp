@@ -1,6 +1,6 @@
 #include "Truck_yard.h"
 
-Truck_yard::Truck_yard() : Truck_yard(0) {
+Truck_yard::Truck_yard() : Truck_yard() {
 
 }
 
@@ -20,8 +20,13 @@ Truck *get_current_stock_list() {
 
 }
 
-bool Truck_yard::add_stock(Truck c) {
-
+bool Truck_yard::add_stock(Truck truck) {
+    if (size < max) {
+        trucks[size] = truck;
+        size++;
+        return true;
+    }
+    return false;
 }
 
 Truck_yard::~Truck_yard() {

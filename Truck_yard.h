@@ -3,9 +3,11 @@
 #include "Truck.h"
 
 class Truck_yard {
-public:
-    Truck truck;
 private:
+    Truck* trucks;
+    int size;
+    int max;
+public:
     Truck_yard();
     Truck_yard(int capacity);
     int get_total_stock_count();

@@ -6,7 +6,7 @@ class Truck_yard {
 private:
     Truck* trucks;
     int size;
-    int max;
+    int max_capacity;
 public:
     Truck_yard();
     Truck_yard(int capacity);

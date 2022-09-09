@@ -2,7 +2,7 @@
 
 Truck_yard::Truck_yard() {
     max_capacity=0;
-    size=o;
+    size=0;
 
 }
 

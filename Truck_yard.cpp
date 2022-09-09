@@ -1,11 +1,15 @@
 #include "Truck_yard.h"
 
 Truck_yard::Truck_yard() {
+    max_capacity=0;
+    size=o;
 
 }
 
 Truck_yard::Truck_yard(int capacity) {
+    size=0;
     max_capacity = capacity;
+    trucks = new Truck[capacity];
 }
 
 int Truck_yard::get_total_stock_count() {
@@ -13,11 +17,18 @@ int Truck_yard::get_total_stock_count() {
 }
 
 int Truck_yard::get_stock_count(int code) {
-    size = code;
+    int count=0;
+    for (int i = 0; i < size; i++) {
+        if(trucks[i].get_brand_code()==code){
+            count++;
+        }
+
+    }
+    return count;
 }
 
-Truck *get_current_stock_list() {
-
+Truck * Truck_yard::get_current_stock_list() {
+return trucks;
 }
 
 bool Truck_yard::add_stock(Truck truck) {
